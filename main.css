@@ -1,0 +1,315 @@
+body {
+  background-color: grey;
+ font-family: "VCR_OSD", sans-serif;
+}
+
+/* Les polices d'écritures */
+@font-face {
+	font-family: "RoadRage";
+	src: url('fonts/Road_Rage.otf');
+}
+
+@font-face {
+	font-family: "Arcade";
+	src: url('fonts/ARCADE.TTF');
+}
+@font-face {
+	font-family: "VCR_OSD";
+	src: url('fonts/VCR_OSD_MONO_1.001.ttf');
+}
+@font-face {
+	font-family: "SFAlien";
+	src: url('fonts/TrueType/SFAlienEncounters.ttf');
+}
+
+/* Partie Header */
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* CSS des boutons de Nav  */
+
+.nav {
+  height: auto;
+}
+
+.navbuttons {
+  position: absolute;
+
+}
+
+ul {
+  top: 20%;
+  padding-left:0;
+  text-align:left;
+}
+
+ul li {
+  padding-top:3rem;
+
+}
+
+a {
+  position:relative;
+  display:inline-block;
+  color: black;
+  text-decoration: none;
+
+  /* overflow:hidden; */
+  transition: 0.5s;
+
+}
+
+a:hover {
+  background: #efb113;
+  color: #df7f2a;
+  box-shadow: 0 0 5px #efb113,
+              0 0 25px #efb113,
+              0 0 50px #efb113,
+              0 0 200px #efb113;
+}
+
+a span {
+  position:absolute;
+  display:block;
+
+}
+
+a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #efb113);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+
+a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #efb113);
+  animation: animate2 2s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+a span:nth-child(3) {
+  bottom: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #efb113);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+
+
+
+.second_page {
+background-image: url("media/carchasing.gif");
+background-size:auto;
+height: 100vh;
+padding:0;
+margin:0;
+}
+
+.headline_about {
+  color: white;
+  font-family: "VCR_OSD";
+}
+
+.headline {
+  text-align: right;
+  padding-right:10%;
+  padding-top:10%;
+}
+
+.about {
+  justify-content: flex-end;
+  text-align: right;
+  margin-left: 70%;
+  padding-right:5%;
+  padding-top:2rem;
+  color:white;
+}
+
+.third_page {
+
+
+  padding:0;
+  margin:0;
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.third_page video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.third_page .container {
+  position: relative;
+  z-index: 2;
+}
+
+.third_page .image-holder .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("media/overlay-lights.gif");
+  background-size:cover;
+  opacity: 0.1;
+  z-index: 3;
+}
+
+#play_button {
+  position:absolute;
+  bottom:50%;
+  right:50%;
+  margin:auto;
+}
+.title {
+   text-align: right;
+  padding-right:12%;
+  padding-top:17%;
+  color: #CFBBAC;
+  font-family: "VCR_OSD";}
+
+.fourth_page {
+background-image: url("media/articles.gif");
+background-size:cover;
+height: 125vh;
+padding:0;
+margin:0;
+}
+
+.dialogue {
+  text-align: right;
+  padding-right:12%;
+  padding-top:17%;
+  color: #CFBBAC;
+  font-family: "VCR_OSD";
+
+}
+
+.background_image {
+  background-image: url("media/drivingcar.gif");
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  width: 50%;
+}
+.fifth_page {
+width:auto;
+height:100vh;
+padding-left:0;
+margin:0;
+}
+
+.overlay_fifth {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 125vh;
+  width: 100%;
+  background-color: #CFBBAC;
+  opacity: 0.4;
+  z-index: 1;
+
+}
+
+
+.image-holder {
+	width: 100%;
+	height: 125vh;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1 {
+  font-family: "RoadRage";
+  color: #654444;
+}
