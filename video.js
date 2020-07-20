@@ -16,12 +16,25 @@ setTimeout(function() {
     video.load();
     video.play();
 }, 3000);
+//
+// function stopReset() {
+//   clearTimeout(setTimeout(function()));
+// }
 
+// function skip'(){
+//     setTimeout(function());
+//     button.style = "";
+// }
 
-function skip(){
-    button.setTimeout();
-    button.style = "";
-}
+$('.video').parent().click(function () {
+    if($(this).children(".video").get(0).paused){
+        $(this).children(".video").get(0).play();
+        $(this).children(".playpause").fadeOut();
+    }else{
+       $(this).children(".video").get(0).pause();
+        $(this).children(".playpause").fadeIn();
+    }
+});
 
 // function loadAnotherVideo() {
 //     var video = document.getElementsByTagName('video')[0];
