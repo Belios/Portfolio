@@ -33,9 +33,9 @@ header {
 }
 
 section {
-  position: relative;
-  display:flex;
-  overflow:hidden;
+  /* position: relative; */
+  /* display:flex; */
+  /* overflow:hidden; */
 }
 
 
@@ -52,7 +52,7 @@ header video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 header .container {
